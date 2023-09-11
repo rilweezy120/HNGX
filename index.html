@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info Project</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+      <!-- javascript -->
+      <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="home">
+      <!-- nav header -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="/logo.svg" class="logo" alt="nav-logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- nav-links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="#services" class="scroll-link">services</a>
+              </li>
+              <li>
+                <a href="#tours" class="scroll-link">tours</a>
+              </li>
+            </ul>
+          </div>
+
+          </div>
+        </div>
+      </nav>
+<!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <img src="profile-pic.jpg" alt="cyberDEV" data-testid="slackDisplayImage" class="profile">
+          <h1 data-testid="slackUserName">Umar Rilwan</h1>
+          <p>
+            I am an aspiring developer, learning never stops for me.
+          </p>
+
+          <h3 class="default"> Day : <span id="day" data-testid="currentDayOfTheWeek">aa</span> </h3>
+          <h3 class="default"> Time : <span id="time" data-testid="currentUTCTime">aa</span> </h3>
+          <h3 class="default"> Track : <span id="track" data-testid="myTrack">Frontend</span> </h3>
+
+
+          <a href="https://github.com/rilweezy120" class="btn btn-white scroll-link" data-testid="githubURL"> explore my github</a>
+        </div> 
+        
+    </header>
+
+
+    <!-- back to top -->
+    <a href="#home" class="scroll-link top-link"><i class="fas fa-arrow-up"></i></a>
+
+  
+  </body>
+</html>
