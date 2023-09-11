@@ -9,7 +9,11 @@ const time = document.getElementById('time');
 const dt = new Date();
 // date.textContent = dt.getFullYear();
 day.textContent = dt.toLocaleDateString('en-EN', { weekday: 'long' });
-time.textContent = dt.getTime();
+let hours = dt.getHours();
+let minutes = dt.getMinutes();
+let seconds = dt.getSeconds();
+
+time.textContent = `${hours}:${minutes}:${seconds}`;
 
 window.addEventListener('scroll', () => {
     const navBar = document.getElementById('nav')
